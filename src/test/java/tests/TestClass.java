@@ -15,11 +15,12 @@ public class TestClass {
     public void inicio(){
         //driveManager = new DriveManager();  -- Chamar direto o método quando classe é de utility
         driver = DriveManager.openBrowser("chrome");
+        driver.get("https://www.saucedemo.com/");
     }
 
     @Test
     public void test(){
-        driver.get("https://www.google.com");
+
     }
 
     @AfterEach
