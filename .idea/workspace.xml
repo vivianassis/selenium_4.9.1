@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b9b13cb-80b4-4dc4-a04f-802ac5edce3e" name="Changes" comment="Class waiter add">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/Hooks.java" afterDir="false" />
+    <list default="true" id="5b9b13cb-80b4-4dc4-a04f-802ac5edce3e" name="Changes" comment="Tests Update (Login)">
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/TestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testData.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestClass.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,22 +51,13 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.TestClass.commomLogin">
-    <configuration name="TestClass (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="novo_selenium" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.TestClass" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\novo_selenium\src\test" />
+      <recent name="C:\novo_selenium\src\test\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestClass.emptyPass">
     <configuration name="TestClass.blockedLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="novo_selenium" />
       <extension name="coverage">
@@ -116,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestClass.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestClass.whrongPassLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="novo_selenium" />
       <extension name="coverage">
         <pattern>
@@ -126,7 +116,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.TestClass" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="METHOD_NAME" value="whrongPassLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass.whrongUserLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="novo_selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.TestClass" />
+      <option name="METHOD_NAME" value="whrongUserLogin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestClass.commomLogin" />
         <item itemvalue="JUnit.TestClass.emptyPass" />
+        <item itemvalue="JUnit.TestClass.whrongPassLogin" />
+        <item itemvalue="JUnit.TestClass.whrongUserLogin" />
+        <item itemvalue="JUnit.TestClass.commomLogin" />
         <item itemvalue="JUnit.TestClass.blockedLogin" />
-        <item itemvalue="JUnit.TestClass (1)" />
-        <item itemvalue="JUnit.TestClass.test" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +171,28 @@
       <option name="project" value="LOCAL" />
       <updated>1686222875347</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Hooks add">
+      <created>1686231921860</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686231921860</updated>
+    </task>
+    <task id="LOCAL-00004" summary="dependency update">
+      <created>1686231954802</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686231954802</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Tests Update (Login)">
+      <created>1686232025525</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686232025525</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,6 +209,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test Class Update" />
     <MESSAGE value="Class waiter add" />
-    <option name="LAST_COMMIT_MESSAGE" value="Class waiter add" />
+    <MESSAGE value="Hooks add" />
+    <MESSAGE value="dependency update" />
+    <MESSAGE value="Tests Update (Login)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests Update (Login)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

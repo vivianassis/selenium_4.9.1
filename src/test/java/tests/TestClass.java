@@ -5,66 +5,59 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utils.Hooks;
+import utils.TestData;
+
+
+import static utils.TestData.*;
 
 public class TestClass extends Hooks {
-    //--------data--------//
-    String commonUser = "standard-user";
-    String blockedUser = "locked_out_user";
-    String wrongUser = "ABC";
-    String emptyUser = "";
-    String pass = "secret_sauce";
-    String wrongPass = "123";
-    String emptyPass = "";
-
-    //-------ErrorMessages-------//
-    String lockedErrorMessage = "Epic sadface: Sorry, this user has been locked out.";
-    String wrongUserErrorMessage = "Epic sadface: Username and password do not match any user in this service";
-    String wrongPassErrorMessage = "Epic sadface: Username and password do not match any user in this service";
-    String emptyUserErrorMessage = "Epic sadface: Username is required";
-    String emptyPassErrorMessage = "Epic sadface: Password is required";
+    //--------testData.properties--------//
+    private static String getData(String key) {
+        return TestData.getData(key);
+    }
 
     @Test
     public void commomLogin() {
-        loginPage.login(commonUser, pass, 10);
+        loginPage.login(getData("commonUser"), getData("pass"), 10);
     }
 
     @Test
     public void blockedLogin() {
-        loginPage.login(blockedUser, pass, 10);
+        loginPage.login(getData("blockedUser"), getData("pass"), 10);
         WebElement errorElement = driver.findElement(By.cssSelector("[data-test='error']"));
         Assertions.assertTrue(errorElement.isDisplayed());
-        Assertions.assertEquals(lockedErrorMessage, errorElement.getText());
+        Assertions.assertEquals(getData("lockedErrorMessage"), errorElement.getText());
     }
 
     @Test
     public void whrongUserLogin() {
-        loginPage.login(wrongUser, pass, 10);
+        loginPage.login(getData("wrongUser"), getData("pass"), 10);
         WebElement errorElement = driver.findElement(By.cssSelector("[data-test='error']"));
         Assertions.assertTrue(errorElement.isDisplayed());
-        Assertions.assertEquals(wrongUserErrorMessage, errorElement.getText());
+        Assertions.assertEquals(getData("wrongUserErrorMessage"), errorElement.getText());
     }
 
     @Test
     public void whrongPassLogin() {
-        loginPage.login(commonUser, wrongPass, 10);
+        loginPage.login(getData("commonUser"), getData("wrongPass"), 10);
         WebElement errorElement = driver.findElement(By.cssSelector("[data-test='error']"));
         Assertions.assertTrue(errorElement.isDisplayed());
-        Assertions.assertEquals(wrongPassErrorMessage, errorElement.getText());
+        Assertions.assertEquals(getData("wrongPassErrorMessage"), errorElement.getText());
     }
 
     @Test
     public void emptyUser() {
-        loginPage.login(emptyUser, pass, 10);
+        loginPage.login(getData("emptyUser"), getData("pass"), 10);
         WebElement errorElement = driver.findElement(By.cssSelector("[data-test='error']"));
         Assertions.assertTrue(errorElement.isDisplayed());
-        Assertions.assertEquals(emptyUserErrorMessage, errorElement.getText());
+        Assertions.assertEquals(getData("emptyUserErrorMessage"), errorElement.getText());
     }
 
     @Test
     public void emptyPass() {
-        loginPage.login(commonUser, emptyPass, 10);
+        loginPage.login(getData("commonUser"), getData("emptyPass"), 10);
         WebElement errorElement = driver.findElement(By.cssSelector("[data-test='error']"));
         Assertions.assertTrue(errorElement.isDisplayed());
-        Assertions.assertEquals(emptyPassErrorMessage, errorElement.getText());
+        Assertions.assertEquals(getData("emptyPassErrorMessage"), errorElement.getText());
     }
 }
