@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b9b13cb-80b4-4dc4-a04f-802ac5edce3e" name="Changes" comment="Tests Update (Login)">
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/TestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testData.properties" afterDir="false" />
+    <list default="true" id="5b9b13cb-80b4-4dc4-a04f-802ac5edce3e" name="Changes" comment="Refact: File Data Add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestClass.java" afterDir="false" />
     </list>
@@ -57,8 +55,8 @@
       <recent name="C:\novo_selenium\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestClass.emptyPass">
-    <configuration name="TestClass.blockedLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TestClass.whrongUserLogin">
+    <configuration name="TestClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="novo_selenium" />
       <extension name="coverage">
         <pattern>
@@ -68,8 +66,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.TestClass" />
-      <option name="METHOD_NAME" value="blockedLogin" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestClass.whrongUserLogin" />
+        <item itemvalue="JUnit.TestClass" />
+        <item itemvalue="JUnit.TestClass.commomLogin" />
         <item itemvalue="JUnit.TestClass.emptyPass" />
         <item itemvalue="JUnit.TestClass.whrongPassLogin" />
-        <item itemvalue="JUnit.TestClass.whrongUserLogin" />
-        <item itemvalue="JUnit.TestClass.commomLogin" />
-        <item itemvalue="JUnit.TestClass.blockedLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686232025525</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refact: File Data Add">
+      <created>1686238997608</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686238997608</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,7 +216,8 @@
     <MESSAGE value="Hooks add" />
     <MESSAGE value="dependency update" />
     <MESSAGE value="Tests Update (Login)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tests Update (Login)" />
+    <MESSAGE value="Refact: File Data Add" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refact: File Data Add" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

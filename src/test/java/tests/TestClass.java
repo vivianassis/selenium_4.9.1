@@ -7,11 +7,8 @@ import org.openqa.selenium.WebElement;
 import utils.Hooks;
 import utils.TestData;
 
-
-import static utils.TestData.*;
-
 public class TestClass extends Hooks {
-    //--------testData.properties--------//
+    //--------data.properties--------//
     private static String getData(String key) {
         return TestData.getData(key);
     }

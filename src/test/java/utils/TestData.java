@@ -10,7 +10,7 @@ public class TestData {
     static {
         testData = new Properties();
         try {
-            String filePath = "src/test/resources/testData.properties";
+            String filePath = "src/test/resources/data.properties";
             testData.load(new FileInputStream(filePath));
         } catch (IOException e) {
             e.printStackTrace();
